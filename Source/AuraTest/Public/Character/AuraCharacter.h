@@ -13,7 +13,8 @@ UCLASS()
 class AURATEST_API AAuraCharacter : public AAuraCharacterBase
 {
 	GENERATED_BODY()
-	
+public:
+	AAuraCharacter();
 	
 	
 	
