@@ -16,6 +16,14 @@ class AURATEST_API AAuraEnemy : public AAuraCharacterBase, public IEnemyInterfac
 	GENERATED_BODY()
 public:
 	AAuraEnemy();
+
+	//~ Begin IEnemyInterface Interface
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
+	//~ End IEnemyInterface Interface
+
+protected:
+	virtual void BeginPlay() override;
+	virtual void InitAbilityActorInfo() override;
+
 };

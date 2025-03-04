@@ -34,7 +34,7 @@ private:
 	void Move(const FInputActionValue& InputActionValue);
 
 	void CursorTrace();
-
+	//TODO 改成TObjectPtr<IEnemyInterface>编不过
 	IEnemyInterface* LastActor;
 	IEnemyInterface* ThisActor;
 
